@@ -1,0 +1,35 @@
+.wrapper {
+    box-sizing: border-box;
+    width: auto;
+    text-align: center;
+}
+
+.header{
+    margin-top: 50px;
+}
+
+.nav {
+    display: inline;
+    margin: 50px;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+.article {
+    width: 30vw;
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.text-color {
+    color: grey;
+}
