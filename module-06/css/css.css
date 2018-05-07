@@ -1,0 +1,358 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url("../font/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: Montserrat-bold;
+    src: url("../font/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: KaushanScript-Regular;
+    src: url("../font/KaushanScript-Regular.ttf");
+}
+
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 24px;
+}
+
+.logo {
+    width: 700px;
+    color: rgb(149,225,211);
+    font-family: Montserrat-bold;
+    font-size: 42px;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+nav a {
+    font-family: Montserrat-Regular;
+    color: rgb(149,225,221);
+}
+
+nav a:hover{
+    color: rgb(243,129,129)
+}
+
+nav a:hover:after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 3px;
+    background: rgb(243,129,129);
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.slogan {
+    font-family: KaushanScript-Regular;
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: Montserrat-bold;
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: rgb(243,129,129);
+    margin: 30px auto 0;
+}
+
+.item   {
+    width: 300px;
+    height: 75px;
+    margin-top: 50px;
+    display: inline-flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.name {
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(51,51,51);
+    margin-left: 20px;
+    display: block;
+}
+
+.des {
+    font-family: Roboto;
+    font-size: 15px;
+    color: rgb(153,153,153);
+    margin-top: 15px;
+    width: 260px;
+    margin-left: 20px;
+    display: block;
+}
+
+.text {
+    font-family: Roboto;
+    font-size: 15px;
+    display: block;
+    margin-top: 35px;
+    text-align: center;
+    line-height: normal;
+    color: rgb(153,153,153);
+}
+
+.icon {
+    width: 40px;
+    height: 75px;
+}
+
+.team {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+figure {
+    display: flex;
+    position: relative;
+    flex-flow: column;
+}
+
+.about {
+    width: 350px;
+    height: 400px;
+    background: rgb(149,225,221);
+    z-index: -1;
+    position: relative;
+}
+
+.photo1 {
+    width: 350px;
+    height: 400px;
+    background: url("../img/Photo1.png");
+    position: absolute;
+    top; -350px;
+    z-index: 1;
+}
+
+.photo1:hover {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: linear-gradient(to top, rgba(251,227,137,0.7), rgba(243,129,129,0.7)), url("../img/Photo1.png");
+}
+
+.photo1:hover .wrapper_sm{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    top: 160px;
+    left: 65px;
+    visibility: visible;
+}
+
+.photo2 {
+    width: 350px;
+    height: 400px;
+    background: url(../img/Photo2.png);
+    position: absolute;
+    top; -350px;
+    z-index: 1;
+}
+
+.photo2:hover {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: linear-gradient(to top, rgba(251,227,137,0.7), rgba(243,129,129,0.7)), url("../img/Photo2.png");
+}
+
+.photo2:hover .wrapper_sm{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    top: 160px;
+    left: 65px;
+    visibility: visible;
+}
+
+.photo3 {
+    width: 350px;
+    height: 400px;
+    background: url(../img/Photo3.png);
+    position: absolute;
+    top; -350px;
+    z-index: 1;
+}
+
+.photo3:hover {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: linear-gradient(to top, rgba(251,227,137,0.7), rgba(243,129,129,0.7)), url("../img/Photo3.png");
+}
+
+.photo3:hover .wrapper_sm{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    top: 160px;
+    left: 65px;
+    visibility: visible;
+}
+
+.wrapper_sm {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    top: 160px;
+    left: 65px;
+    visibility: hidden;
+}
+
+.sm {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    background: rgb(252,227,138);
+    display: inline-block;
+    text-align: center;
+    line-height: 70px;
+    margin-left: -2px;
+
+}
+
+.about:hover{
+
+}
+.sm:hover {
+    background: rgb(149,225,221);
+}
+
+.person {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.prof {
+    font-family: Roboto;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 15px;
+    color: rgb(153,153,153);
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 75px;
+    width: auto;
+    height: 120px;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: auto;
+    height: 1px;
+    background: rgb(153,153,153);
+}
+
+footer span {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+}
+
+.comp {
+    color: rgb(243,129,129);
+}
+
+.inputtext {
+    width: 210px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 441px;
+    margin-top: 23px;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 15px;
+    color: rgb(153,153,153);
+}
+
+.inputbutton {
+    width: 150px;
+    height: 36px;
+    background: rgb(149,225,221);
+    border: none;
+    display: inline-block;
+    margin-left: 654px;
+    margin-top: 23px;
+    position: absolute;
+}
+
+.buttontext {
+    color: white;
+    font-family: Montserrat-bold;
+    font-size: 14px;
+}
+
+.footerspan {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+figure img:hover {
+    background: url("../img/Rectangle 14.png");
+    z-index: 1;
+
+}
